@@ -18,7 +18,7 @@
             <div class="placa"><span class="placa-texto">Vila do Chaves — Quiz Oficial</span></div>
 
             <div class="card">
-                <div class="header">
+                <div class="header"> 
                     <span class="casa-icon">🏠</span>
                     <h1>Qual personagem você seria?</h1>
                 </div>
@@ -42,7 +42,7 @@
                     </p>
                 </div>
                 <div class="texto-centro">
-                    <button class="botao1" onclick="jogo.iniciar()">Iniciar</button>
+                    <button class="botao1" onclick="Jogo.iniciar()">Iniciar</button>
                 </div>
             </div>
         </div>
@@ -50,18 +50,22 @@
         <div id="tela-questionario" class="tela"style="display: none;">
             <div class="placa"><span class="placa-texto">Questionário da Vila</span></div>
             <div class="card">
-                <h2 id="pergunta-texto"></h2>
-                <div id="opcoes-respostas">
+                <h2 id="texto"></h2>
+                <div id="opcoes"></div>
+
+                <div class="quiz-nav">
+                    <button class="btn-anterior" id="botao-anterior">Anterior</button>
+                    <button class="bnt-proximo" id="botao-proximo">Próxima</button>
                 </div>
             </div>
         </div>
 
         <div id="tela-resultado" style="display: none;">
-             <div class="placa"><span class="placa-txt">🎉 Seu personagem!</span></div>
+             <div class="placa"><span class="placa-texto">🎉 Seu personagem!</span></div>
                 <h2>Você seria o...</h2>
                 <div id="personagem-resultado"></div>
                 <div class="text-center">
-                <button class="btn btn-reiniciar" onclick="jogo.reiniciar()">🔄 Jogar de novo!</button></div>
+                <button class="btn btn-reiniciar" onclick="Jogo.reiniciar()">🔄 Jogar de novo!</button></div>
         </div>
         
         <footer>
