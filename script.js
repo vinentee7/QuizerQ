@@ -26,180 +26,180 @@ class Pergunta {
 
 const perguntas = [
   {
-    texto: "Alguém te oferece algo pra beber… o que você escolhe?",
+    texto: "1) Alguém te oferece algo pra beber… o que você escolhe?",
     opcoes: [
       {
-        texto: "O que parece de groselha, mas é de tamarindo e tem gosto de limão",
+        texto: "A) O que parece de groselha, mas é de tamarindo e tem gosto de limão",
         pontos: { chaves: 3, quico: 2, chiquinha: 2, seu_madruga: 1, girafales: 1 }
       },
       {
-        texto: "Um cafezinho bem quente",
+        texto: "B) Um cafezinho bem quente",
         pontos: { girafales: 3, quico: 2, seu_madruga: 2, chiquinha: 1, chaves: 1 }
       },
       {
-        texto: "Qualquer coisa desde que não precise pagar",
+        texto: "C) Qualquer coisa desde que não precise pagar",
         pontos: { seu_madruga: 3, chiquinha: 3, chaves: 2, quico: 1, girafales: 1 }
       }
     ]
   },
 
   {
-    texto: "O que você mais gosta de fazer no tempo livre?",
+    texto: "2) O que você mais gosta de fazer no tempo livre?",
     opcoes: [
       {
-        texto: "Ficar tranquilo, comer ou descansar",
+        texto: "A) Ficar tranquilo, comer ou descansar",
         pontos: { chaves: 3, seu_madruga: 2, girafales: 2, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Inventar coisas ou se divertir",
+        texto: "B) Inventar coisas ou se divertir",
         pontos: { chiquinha: 3, seu_madruga: 3, chaves: 2, girafales: 1, quico: 1 }
       },
       {
-        texto: "Fazer algo do seu jeito",
+        texto: "C) Fazer algo do seu jeito",
         pontos: { quico: 3, chiquinha: 2, girafales: 2, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "Você vê um sanduíche de presunto dando sopa…",
+    texto: "3) Você vê um sanduíche de presunto dando sopa…",
     opcoes: [
       {
-        texto: "Fico esperando alguém oferecer",
+        texto: "A) Fico esperando alguém oferecer",
         pontos: { chaves: 3, seu_madruga: 2, girafales: 1, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Dou um jeito de conseguir",
+        texto: "B) Dou um jeito de conseguir",
         pontos: { seu_madruga: 3, chiquinha: 3, chaves: 2, quico: 1, girafales: 1 }
       },
       {
-        texto: "Digo que é meu e não divido",
+        texto: "C) Digo que é meu e não divido",
         pontos: { quico: 3, chiquinha: 2, girafales: 2, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "O que você mais valoriza na vida?",
+    texto: "4) O que você mais valoriza na vida?",
     opcoes: [
       {
-        texto: "Saber se virar com pouco",
+        texto: "A) Saber se virar com pouco",
         pontos: { seu_madruga: 3, chiquinha: 3, chaves: 2, girafales: 1, quico: 1 }
       },
       {
-        texto: "Trabalhar honestamente",
+        texto: "B) Trabalhar honestamente",
         pontos: { chaves: 3, girafales: 3, seu_madruga: 1, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Ter conforto",
+        texto: "C) Ter conforto",
         pontos: { quico: 3, chaves: 1, seu_madruga: 2, chiquinha: 1, girafales: 1 }
       }
     ]
   },
 
   {
-    texto: "Qual é sua maior qualidade?",
+    texto: "5) Qual é sua maior qualidade?",
     opcoes: [
       {
-        texto: "Bondade",
+        texto: "A) Bondade",
         pontos: { chaves: 3, girafales: 3, seu_madruga: 2, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Esperteza",
+        texto: "B) Esperteza",
         pontos: { seu_madruga: 3, chiquinha: 3, quico: 2, chaves: 1, girafales: 1 }
       },
       {
-        texto: "Atitude",
+        texto: "C) Atitude",
         pontos: { quico: 3, chiquinha: 2, girafales: 1, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "Qual é seu maior defeito?",
+    texto: "6) Qual é seu maior defeito?",
     opcoes: [
       {
-        texto: "Ingenuidade",
+        texto: "A) Ingenuidade",
         pontos: { chaves: 3, girafales: 1, seu_madruga: 1, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Malandragem",
+        texto: "B) Malandragem",
         pontos: { seu_madruga: 3, chiquinha: 2, quico: 2, chaves: 1, girafales: 1 }
       },
       {
-        texto: "Orgulho",
+        texto: "C) Orgulho",
         pontos: { quico: 3, chiquinha: 3, girafales: 2, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "O que você não suporta?",
+    texto: "7) O que você não suporta?",
     opcoes: [
       {
-        texto: "Injustiça",
+        texto: "A) Injustiça",
         pontos: { chaves: 2, girafales: 3, seu_madruga: 2, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Responsabilidade",
+        texto: "B) Responsabilidade",
         pontos: { seu_madruga: 3, chiquinha: 1, quico: 2, chaves: 1, girafales: 1 }
       },
       {
-        texto: "Não conseguir o que quer",
+        texto: "C) Não conseguir o que quer",
         pontos: { quico: 3, chiquinha: 3, girafales: 1, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "Você faz algo errado sem querer…",
+    texto: "8) Você faz algo errado sem querer…",
     opcoes: [
       {
-        texto: "Tento consertar",
+        texto: "A) Tento consertar",
         pontos: { chaves: 3, girafales: 3, seu_madruga: 1, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Escondo",
+        texto: "B) Escondo",
         pontos: { seu_madruga: 3, chiquinha: 3, quico: 2, chaves: 1, girafales: 1 }
       },
       {
-        texto: "Culpo alguém",
+        texto: "C) Culpo alguém",
         pontos: { chiquinha: 3, quico: 3, girafales: 2, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "Quando você quer algo…",
+    texto: "9) Quando você quer algo…",
     opcoes: [
       {
-        texto: "Faço do jeito certo",
+        texto: "A) Faço do jeito certo",
         pontos: { chaves: 3, girafales: 3, seu_madruga: 1, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Dou um jeitinho",
+        texto: "B) Dou um jeitinho",
         pontos: { seu_madruga: 3, chiquinha: 2, quico: 1, chaves: 2, girafales: 1 }
       },
       {
-        texto: "Insisto até conseguir",
+        texto: "C) Insisto até conseguir",
         pontos: { quico: 3, chiquinha: 2, girafales: 1, seu_madruga: 1, chaves: 1 }
       }
     ]
   },
 
   {
-    texto: "Quando você gosta de alguém…",
+    texto: "10) Quando você gosta de alguém…",
     opcoes: [
       {
-        texto: "Fico tímido",
+        texto: "A) Fico tímido",
         pontos: { chaves: 3, girafales: 2, seu_madruga: 2, quico: 1, chiquinha: 1 }
       },
       {
-        texto: "Tento impressionar",
+        texto: "B) Tento impressionar",
         pontos: { quico: 3, chiquinha: 3, girafales: 2, seu_madruga: 1, chaves: 1 }
       },
       {
-        texto: "Finjo que não ligo",
+        texto: "C) Finjo que não ligo",
         pontos: { chiquinha: 3, seu_madruga: 2, quico: 2, girafales: 1, chaves: 1 }
       }
     ]
@@ -207,7 +207,6 @@ const perguntas = [
 ];
 
 console.log(perguntas);
-
 
 function mostrarPergunta(indice) {
     const pergunta = perguntas[indice];
