@@ -1,43 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qual Personagem do Chaves Você Seria?</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Architects+Daughter&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Quiz - Chaves</h1>
-    <p>
-        Bem vindo ao melhor <b>Quiz</b> de chaves<br/>
-        nesse jogo você deve reponder uma série de perguntas que vai resultar<br/>
-        no personagem que mais combina com você no nosso universo
-    </p>
+    <div id="principal">
+        <div id="tela-inicio" class="tela-ativa">
+            <div class="placa"><span class="placa-texto">Vila do Chaves — Quiz Oficial</span></div>
 
-    <button>Iniciar questionario</button>
-    
-    <hr>
+            <div class="card">
+                <div class="header">
+                    <span class="casa-icon">🏠</span>
+                    <h1>Qual personagem você seria?</h1>
+                </div>
 
-    <h3>Conheça um pouco do mundo de chaves</h3>
+                <p class="legenda">
+                    Bem-vindo ao melhor <b>Quiz</b> de chaves! <br>
+                    Nesse jogo você deve reponder uma série de perguntas que vai resultar<br />
+                    no personagem que mais combina com você no nosso universo.
+                </p>
 
-    <p>Blá-blá-blá</p>
+                <div class="introducao">
+                    <img src="https://tm.ibxk.com.br/2022/02/08/08195240225471.jpg" class="img">
+                    <h3>Conheça um pouco do mundo de chaves</h3> <br>
+                    <p>
+                        Chaves (El Chavo del Ocho) é um seriado de comédia que se passa em uma vila simples, onde um
+                        garoto órfão chamado
+                        Chaves vive dentro de um barril e se envolve em diversas confusões com seus amigos e vizinhos.
+                        Ao lado de personagens marcantes como Chiquinha, Quico, Seu Madruga e o Professor Girafales, a
+                        história mostra situações do dia a dia cheias de humor, lições e muita diversão que conquistaram
+                        gerações.
+                    </p>
+                </div>
+                <div class="texto-centro">
+                    <button class="botao1" onclick="jogo.iniciar()">Iniciar</button>
+                </div>
+            </div>
+        </div>
 
-    <hr>
+        <div id="tela-questionario" class="tela"style="display: none;">
+            <div class="placa"><span class="placa-texto">Questionário da Vila</span></div>
+            <div class="card">
+                <h2 id="pergunta-texto"></h2>
+                <div id="opcoes-respostas">
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <h4>Membros</h4>
-        <ul>
-            <li>Emanuelly</li>
-            <li>Eduarda</li>
-            <li>Abraão</li>
-            <li>Samuel</li>
-        </ul>
+        <div id="tela-resultado" style="display: none;">
+             <div class="placa"><span class="placa-txt">🎉 Seu personagem!</span></div>
+                <h2>Você seria o...</h2>
+                <div id="personagem-resultado"></div>
+                <div class="text-center">
+                <button class="btn btn-reiniciar" onclick="jogo.reiniciar()">🔄 Jogar de novo!</button></div>
+        </div>
+        
+        <footer>
 
-        <h4>Contato</h4>
-        <p>teste@gmail.com - (61)91731-0837</p>
-
-        <img src="" alt="Logo da UCB">
-    </footer>
-
+            <h4>Membros do grupo 10 </h4>
+            <p> Abraão Dias, Eduarda Freire, Emanuele Fonseca, Samuel Vinente
+                <br>&COPY 2026 - Todos os direitos reservados.
+            </p>
+            <img src="https://blogdoenem.com.br/wp-content/uploads/2014/12/ucb-1-1024x204.png" alt="Logo da UCB"
+                class="img-logo">
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
