@@ -192,24 +192,57 @@ h1 {
     flex-wrap: wrap;
     gap: 12px;
 }
+.btn-anterior {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
+    padding: 11px 26px;
+    border-radius: 50px;
+    border: 2.5px solid var(--marrom);
+    cursor: pointer;
+    transition: all 0.18s;
 
-.botao-anterior {
+}
+
+#botao-anterior {
     background: var(--palha);
     color: var(--marrom);
     box-shadow: 3px 3px 0 var(--marrom);
     border-radius: 5px;
 }
 
-.botao-anterior:hover {
+#botao-anterior:hover {
     transform: translate(-1px, -1px);
     box-shadow: 4px 4px 0 var(--marrom);
 }
 
-.btn-reiniciar {
-    background: var(--amarelo);
-    color: var(--marrom);
-    box-shadow: 4px 4px 0 var(--marrom);
-    margin-top: 50px;
+.btn-proximo {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1rem;
+    padding: 11px 26px;
+    border-radius: 50px;
+    border: 2.5px solid var(--marrom);
+    cursor: pointer;
+    transition: all 0.18s;
+
+}
+
+#botao-proximo {
+    background: var(--azul);
+    color: #fff;
+    box-shadow: 3px 3px 0 #0a3a7a;
+    border-color: #0a3a7a;
+
+}
+
+#botao-proximo:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 5px 5px 0 #0a3a7a;
+}
+
+.btn-proximo:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+    transform: none;
 }
 
 .btn-reiniciar {
