@@ -240,7 +240,57 @@ class Jogo {
         location.reload();
     }
 
-    static selecionarResposta(indice) {
+    static selecionarResposta(indice) {}
+}
 
+
+Jogo.selecionarResposta = function(indice) {
+    respostaSelecionada = indice;
+
+    document.querySelectorAll(".resposta").forEach(btn =>
+        btn.classList.remove("selecionada")
+    );
+
+    const botoes = document.querySelectorAll(".resposta");
+    if (botoes[indice]) {
+        botoes[indice].classList.add("selecionada");
     }
 }
+
+Jogo.proximaPergunta = function() {
+    if (respostaSelecionada === null) {
+        alert("Selecione uma resposta!");
+        return;
+    }
+
+    const pergunta = perguntas[perguntaAtual];
+    const opcao = pergunta.opcoes[respostaSelecionada];
+
+    for (let personagemId in opcao.pontos) {
+        const personagem = personagens.find(p => p.id === personagemId);
+        if (personagem) {
+            personagem.pontos += opcao.pontos[personagemId];
+        }
+    }
+
+    perguntaAtual++;
+    respostaSelecionada = null;
+
+    if (perguntaAtual < perguntas.length) {
+        mostrarPergunta(perguntaAtual);
+    } else {
+        document.getElementById("tela-questionario").style.display = "none";
+        document.getElementById("tela-resultado").style.display = "block";
+    }
+}
+
+Jogo.perguntaAnterior = function() {
+    if (perguntaAtual > 0) {
+        perguntaAtual--;
+        respostaSelecionada = null;
+        mostrarPergunta(perguntaAtual);
+    }
+}
+
+document.getElementById("botao-proximo").onclick = () => Jogo.proximaPergunta();
+document.getElementById("botao-anterior").onclick = () => Jogo.perguntaAnterior();
