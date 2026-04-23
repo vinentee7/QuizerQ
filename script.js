@@ -276,6 +276,7 @@ function construirCardResultado(personagem, tituloResultado) {
         <div class="resultado-textos">
           <h3 class="resultado-nome">${personagem.nome}</h3>
           <p class="resultado-descricao">${personagem.descricao}</p>
+          <p class="resultado-pontos">Pontuacao final: <strong>${personagem.pontos}</strong></p>
         </div>
       </div>
     </div>
