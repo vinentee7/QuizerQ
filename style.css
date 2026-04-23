@@ -288,3 +288,53 @@ footer {
     margin-top: 40px;
     height: auto;
 }
+
+.resposta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    text-align: left;
+    background: var(--palha);
+    border: 2.5px solid var(--marrom);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: 'Baloo 2', cursive;
+    font-size: 0.97rem;
+    color: var(--txt);
+}
+
+.resposta:hover {
+    background: #e8d080;
+    transform: translateX(3px);
+}
+
+.resposta.selecionada {
+    background: var(--amarelo);
+    border-color: var(--marrom);
+    box-shadow: 4px 4px 0 var(--marrom);
+    transform: translateX(3px);
+    font-weight: 700;
+}
+
+.resposta .letra-opcao {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--marrom);
+    color: var(--creme);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.15s;
+}
+
+.resposta.selecionada .letra-opcao {
+    background: var(--vermelho);
+}
