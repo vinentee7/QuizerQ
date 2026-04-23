@@ -246,13 +246,22 @@ h1 {
 }
 
 .btn-reiniciar {
+    display: inline-block;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.05rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 3px solid var(--marrom);
+    cursor: pointer;
+    transition: all 0.18s;
+    letter-spacing: 0.6px;
     background: var(--amarelo);
     color: var(--marrom);
     box-shadow: 4px 4px 0 var(--marrom);
-    margin-top: 50px;
+    margin-top: 28px;
 }
 
-.btn-reiniciar {
+.btn-reiniciar:hover {
     transform: translate(-2px, -2px);
     box-shadow: 6px 6px 0 var(--marrom);
 }
@@ -337,4 +346,107 @@ footer {
 
 .resposta.selecionada .letra-opcao {
     background: var(--vermelho);
+}
+
+#tela-resultado {
+    animation: popIn .45s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+#tela-resultado > h2 {
+    color: var(--creme);
+    text-align: center;
+    margin: 18px 0 14px;
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 1px;
+}
+
+.resultado-card {
+    border-radius: 20px;
+    margin-top: 6px;
+}
+
+.resultado-titulo {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+    color: var(--vermelho);
+    margin-bottom: 20px;
+}
+
+.resultado-conteudo {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+.resultado-imagem {
+    width: 100%;
+    border-radius: 14px;
+    border: 3px solid var(--marrom);
+    object-fit: cover;
+    background: #f7e7b8;
+    min-height: 220px;
+}
+
+.resultado-imagem-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.resultado-textos {
+    color: var(--txt);
+}
+
+.resultado-nome {
+    font-size: 1.8rem;
+    color: var(--marrom);
+    margin-bottom: 10px;
+}
+
+.resultado-descricao {
+    line-height: 1.65;
+    font-size: 1.02rem;
+    margin-bottom: 14px;
+}
+
+.resultado-pontos {
+    font-size: 1.05rem;
+    background: var(--palha);
+    border-left: 4px solid var(--amarelo);
+    padding: 10px 12px;
+    border-radius: 0 10px 10px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .resultado-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .resultado-imagem {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .resultado-titulo {
+        font-size: 1.55rem;
+        text-align: center;
+    }
+
+    .resultado-nome,
+    .resultado-descricao,
+    .resultado-pontos {
+        text-align: center;
+    }
+
+    .resultado-pontos {
+        border-left: none;
+        border-top: 4px solid var(--amarelo);
+        border-radius: 10px;
+    }
 }
